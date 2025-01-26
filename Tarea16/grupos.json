@@ -1,0 +1,41 @@
+{
+  "grupos" : [ {
+    "grupo" : 59,
+    "ciclo" : "DAW",
+    "curso" : "Segundo"
+  } ],
+  "alumnos" : [ {
+    "nia" : 76,
+    "nombre" : "Mihai",
+    "apellidos" : "Stinga",
+    "genero" : "M",
+    "fechaDeNacimiento" : [ 2002, 12, 12 ],
+    "grupo" : {
+      "grupo" : 59,
+      "ciclo" : "DAW",
+      "curso" : "Segundo"
+    }
+  }, {
+    "nia" : 77,
+    "nombre" : "Claudia",
+    "apellidos" : "Castanov",
+    "genero" : "F",
+    "fechaDeNacimiento" : [ 2002, 12, 12 ],
+    "grupo" : {
+      "grupo" : 59,
+      "ciclo" : "DAW",
+      "curso" : "Segundo"
+    }
+  }, {
+    "nia" : 78,
+    "nombre" : "Mihcael ",
+    "apellidos" : "Olise",
+    "genero" : "M",
+    "fechaDeNacimiento" : [ 2000, 12, 12 ],
+    "grupo" : {
+      "grupo" : 59,
+      "ciclo" : "DAW",
+      "curso" : "Segundo"
+    }
+  } ]
+}
