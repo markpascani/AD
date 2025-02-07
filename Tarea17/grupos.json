@@ -1,0 +1,41 @@
+{
+  "grupos" : [ {
+    "grupo" : 59,
+    "ciclo" : "DAW",
+    "curso" : "Segundo"
+  } ],
+  "alumnos" : [ {
+    "nia" : 85,
+    "nombre" : "Juan",
+    "apellidos" : "Prez Lpez",
+    "genero" : "M",
+    "fechaDeNacimiento" : [ 2001, 4, 15 ],
+    "grupo" : {
+      "grupo" : 59,
+      "ciclo" : "DAW",
+      "curso" : "Segundo"
+    }
+  }, {
+    "nia" : 86,
+    "nombre" : "Mara",
+    "apellidos" : "Garca Snchez",
+    "genero" : "F",
+    "fechaDeNacimiento" : [ 2001, 6, 20 ],
+    "grupo" : {
+      "grupo" : 59,
+      "ciclo" : "DAW",
+      "curso" : "Segundo"
+    }
+  }, {
+    "nia" : 87,
+    "nombre" : "Carlos",
+    "apellidos" : "Martnez Ruiz",
+    "genero" : "M",
+    "fechaDeNacimiento" : [ 2001, 8, 10 ],
+    "grupo" : {
+      "grupo" : 59,
+      "ciclo" : "DAW",
+      "curso" : "Segundo"
+    }
+  } ]
+}

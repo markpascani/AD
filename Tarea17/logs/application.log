@@ -1,0 +1,38 @@
+[2025-02-07 14:12:14] [main] ERROR MyDataSourceTest - No se ha esteblecido conexionjava.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 20000ms.
+[2025-02-07 14:32:18] [main] ERROR MyDataSourceTest - No se ha esteblecido conexionjava.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 20000ms.
+[2025-02-07 14:34:56] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: com.mycompany_Tarea17_jar_1.0-SNAPSHOTPU]
+[2025-02-07 14:34:56] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2025-02-07 14:34:56] [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibertante.connection.url=jdbc:mysql://37.187.37.143:3306/Alumnos16?serverTimeZone=UTC&useSSL=false&allowPublicKeyRetrieval=true, hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibertante.connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.dialect=org.hibernate.dialect.MySQL8Dialect, hibernate.connection.password=****, hibernate.connection.username=root, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true}
+[2025-02-07 14:34:56] [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2025-02-07 14:34:56] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2025-02-07 14:34:56] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+[2025-02-07 14:34:56] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+[2025-02-07 14:34:56] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+[2025-02-07 14:34:56] [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[2025-02-07 14:34:57] [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[2025-02-07 14:34:57] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+[2025-02-07 14:35:31] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: AlumnosHibernateJPA]
+[2025-02-07 14:35:31] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2025-02-07 14:35:31] [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibertante.connection.url=jdbc:mysql://37.187.37.143:3306/Alumnos16?serverTimeZone=UTC&useSSL=false&allowPublicKeyRetrieval=true, hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibertante.connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.dialect=org.hibernate.dialect.MySQL8Dialect, hibernate.connection.password=****, hibernate.connection.username=root, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true}
+[2025-02-07 14:35:31] [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2025-02-07 14:35:31] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2025-02-07 14:35:31] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+[2025-02-07 14:35:31] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+[2025-02-07 14:35:31] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+[2025-02-07 14:35:31] [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[2025-02-07 14:35:32] [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[2025-02-07 14:35:32] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+[2025-02-07 14:36:33] [main] ERROR MyDataSourceTest - No se ha esteblecido conexionjava.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 20000ms.
+[2025-02-07 14:37:59] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: AlumnosHibernateJPA]
+[2025-02-07 14:37:59] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2025-02-07 14:37:59] [main] INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibertante.connection.url=jdbc:mysql://37.187.37.143:3306/Alumnos16?serverTimeZone=UTC&useSSL=false&allowPublicKeyRetrieval=true, hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibertante.connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.dialect=org.hibernate.dialect.MySQL8Dialect, hibernate.connection.password=****, hibernate.connection.username=root, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true}
+[2025-02-07 14:37:59] [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2025-02-07 14:38:00] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2025-02-07 14:38:00] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+[2025-02-07 14:38:00] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+[2025-02-07 14:38:00] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+[2025-02-07 14:38:00] [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[2025-02-07 14:38:00] [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[2025-02-07 14:38:00] [main] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@144ab983] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[2025-02-07 14:38:01] [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2025-02-07 14:38:02] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
