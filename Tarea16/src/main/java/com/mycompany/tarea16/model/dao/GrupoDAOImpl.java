@@ -4,6 +4,8 @@
  */
 package com.mycompany.tarea16.model.dao;
 
+
+import com.mycompany.tarea16.model.dao.interfaces.IGrupoDAO;
 import com.mycompany.tarea16.model.dao.utils.MyDataSource;
 import com.mycompany.tarea16.model.entities.Grupo;
 import java.sql.Connection;
@@ -21,7 +23,7 @@ import org.apache.logging.log4j.Logger;
  *
  * @author mihai
  */
-public class GrupoDAOImpl implements IGenericDAO<Grupo, Integer> {
+public class GrupoDAOImpl implements IGrupoDAO {
 
     private static final Logger logger = LogManager.getLogger(GrupoDAOImpl.class);
 

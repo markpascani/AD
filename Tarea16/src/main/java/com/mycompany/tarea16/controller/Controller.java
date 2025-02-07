@@ -5,8 +5,9 @@
 package com.mycompany.tarea16.controller;
 
 import com.mycompany.tarea16.model.dao.AlumnoDAOImpl;
-import com.mycompany.tarea16.model.dao.FicheroJsonDAOImpl;
 import com.mycompany.tarea16.model.dao.GrupoDAOImpl;
+import com.mycompany.tarea16.model.dao.interfaces.IAlumnoDAO;
+import com.mycompany.tarea16.model.dao.interfaces.IGrupoDAO;
 import com.mycompany.tarea16.model.entities.Alumno;
 import com.mycompany.tarea16.model.entities.Grupo;
 import com.mycompany.tarea16.model.entities.GrupoFactory;
@@ -23,16 +24,16 @@ public class Controller {
 
     public static void main(String[] args) {
         // Inicializar DAOs y vista
-        AlumnoDAOImpl alumnoDAO = new AlumnoDAOImpl();
-        GrupoDAOImpl grupoDAO = new GrupoDAOImpl();
+        IAlumnoDAO alumnoDAO = new AlumnoDAOImpl();
+        IGrupoDAO grupoDAO = new GrupoDAOImpl();
         IVista vista = new VistaConsola();
-        FicheroJsonDAOImpl ficheroDAO = new FicheroJsonDAOImpl();
+        FicheroJsonImpl ficheroJson = new FicheroJsonImpl();
 
         // Ejecutar el controlador
-        new Controller().ejecutar(alumnoDAO, grupoDAO, vista, ficheroDAO);
+        new Controller().ejecutar(alumnoDAO, grupoDAO, vista, ficheroJson);
     }
 
-    public void ejecutar(AlumnoDAOImpl alumnoDAO, GrupoDAOImpl grupoDAO, IVista vista, FicheroJsonDAOImpl ficheroDAO) {
+    public void ejecutar(IAlumnoDAO alumnoDAO, IGrupoDAO grupoDAO, IVista vista, FicheroJsonImpl ficheroDAO) {
         boolean salir = false;
 
         while (!salir) {
@@ -76,7 +77,7 @@ public class Controller {
         }
     }
 
-    private void insertarAlumno(AlumnoDAOImpl alumnoDAO, GrupoDAOImpl grupoDAO, IVista vista) {
+    private void insertarAlumno(IAlumnoDAO alumnoDAO, IGrupoDAO grupoDAO, IVista vista) {
         try {
             vista.mostrarFormularioAlumnoNuevo();
             String nombre = vista.solicitarEntrada("Ingrese Nombre");
@@ -102,7 +103,7 @@ public class Controller {
         }
     }
 
-    private void insertarGrupo(GrupoDAOImpl grupoDAO, IVista vista) {
+    private void insertarGrupo(IGrupoDAO grupoDAO, IVista vista) {
         try {
             GrupoFactory grupoFactory = new GrupoFactory("DAM", "1º"); // Valores predeterminados
 
@@ -122,7 +123,7 @@ public class Controller {
         }
     }
 
-    private void mostrarTodosLosAlumnos(AlumnoDAOImpl alumnoDAO, IVista vista) {
+    private void mostrarTodosLosAlumnos(IAlumnoDAO alumnoDAO, IVista vista) {
         List<Alumno> alumnos = alumnoDAO.obtenerTodos();
         if (alumnos.isEmpty()) {
             vista.mostrarMensaje("No hay alumnos registrados.");
@@ -131,7 +132,7 @@ public class Controller {
         }
     }
 
-    private void mostrarAlumnosDeUnGrupo(GrupoDAOImpl grupoDAO, AlumnoDAOImpl alumnoDAO, IVista vista) {
+    private void mostrarAlumnosDeUnGrupo(IGrupoDAO grupoDAO, IAlumnoDAO alumnoDAO, IVista vista) {
         List<Grupo> grupos = grupoDAO.obtenerTodos();
         vista.mostrarGrupos(grupos);
 
@@ -154,7 +155,7 @@ public class Controller {
         }
     }
 
-    private void cambiarDeGrupoAUnAlumno(AlumnoDAOImpl alumnoDAO, GrupoDAOImpl grupoDAO, IVista vista) {
+    private void cambiarDeGrupoAUnAlumno(IAlumnoDAO alumnoDAO, IGrupoDAO grupoDAO, IVista vista) {
         List<Alumno> alumnos = alumnoDAO.obtenerTodos();
         vista.mostrarAlumnos(alumnos);
         String respuesta = vista.solicitarEntrada("Selecciona el alumno al que quieres modificarle el grupo.");
@@ -175,7 +176,7 @@ public class Controller {
 
     }
 
-    private void modificarAlumnoPorPK(AlumnoDAOImpl alumnoDAO, IVista vista) {
+    private void modificarAlumnoPorPK(IAlumnoDAO alumnoDAO, IVista vista) {
         try {
             int nia = Integer.parseInt(vista.solicitarEntrada("Ingrese NIA del alumno a modificar"));
             String nuevoNombre = vista.solicitarEntrada("Ingrese el nuevo nombre");
@@ -197,7 +198,7 @@ public class Controller {
         }
     }
 
-    private void eliminarAlumnoPorPK(AlumnoDAOImpl alumnoDAO, IVista vista) {
+    private void eliminarAlumnoPorPK(IAlumnoDAO alumnoDAO, IVista vista) {
         try {
             int nia = Integer.parseInt(vista.solicitarEntrada("Ingrese NIA del alumno a eliminar"));
             if (alumnoDAO.eliminarPorId(nia)) {
@@ -210,7 +211,7 @@ public class Controller {
         }
     }
 
-    private void eliminarAlumnosPorCurso(AlumnoDAOImpl alumnoDAO, GrupoDAOImpl grupoDAO, IVista vista) {
+    private void eliminarAlumnosPorCurso(IAlumnoDAO alumnoDAO, IGrupoDAO grupoDAO, IVista vista) {
         try {
             String ciclo = vista.solicitarEntrada("Ingrese Ciclo del curso");
             String curso = vista.solicitarEntrada("Ingrese Curso");
@@ -229,7 +230,7 @@ public class Controller {
         }
     }
 
-    private void guardarGrupoEnJson(GrupoDAOImpl grupoDAO, AlumnoDAOImpl alumnoDAO, IVista vista, FicheroJsonDAOImpl fichero) {
+    private void guardarGrupoEnJson(IGrupoDAO grupoDAO, IAlumnoDAO alumnoDAO, IVista vista, FicheroJsonImpl fichero) {
         List<Grupo> grupos = grupoDAO.obtenerTodos();
         vista.mostrarGrupos(grupos);
 
@@ -260,7 +261,7 @@ public class Controller {
         }
     }
 
-    private void mostrarAlumno(AlumnoDAOImpl alumnoDAO, IVista vista) {
+    private void mostrarAlumno(IAlumnoDAO alumnoDAO, IVista vista) {
         List<Alumno> alumnos = alumnoDAO.obtenerTodos();
 
         if (alumnos.isEmpty()) {

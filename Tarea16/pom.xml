@@ -33,8 +33,7 @@
             <artifactId>mysql-connector-j</artifactId>
             <version>9.1.0</version>
         </dependency>
-        
-        
+
         <!-- Dependencia para los logger-->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>

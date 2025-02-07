@@ -4,6 +4,7 @@
  */
 package com.mycompany.tarea16.model.dao;
 
+import com.mycompany.tarea16.model.dao.interfaces.IAlumnoDAO;
 import com.mycompany.tarea16.model.dao.utils.MyDataSource;
 import com.mycompany.tarea16.model.entities.Alumno;
 import com.mycompany.tarea16.model.entities.Grupo;
@@ -23,7 +24,7 @@ import org.apache.logging.log4j.Logger;
  *
  * @author mihai
  */
-public class AlumnoDAOImpl implements IGenericDAO<Alumno, Integer> {
+public class AlumnoDAOImpl implements IAlumnoDAO {
 
     private static final Logger logger = LogManager.getLogger(AlumnoDAOImpl.class);
 

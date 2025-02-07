@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.tarea16.model.dao;
+package com.mycompany.tarea16.controller;
 
+import com.mycompany.tarea16.model.dao.interfaces.IGenericDAO;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -18,12 +19,12 @@ import java.util.List;
  *
  * @author mihai
  */
-public class FicheroJsonDAOImpl implements IGenericDAO<Grupo, Integer> {
+public class FicheroJsonImpl {
 
     private static final String FILE_PATH = "grupos.json";
     private final ObjectMapper objectMapper;
 
-    public FicheroJsonDAOImpl() {
+    public FicheroJsonImpl() {
         this.objectMapper = new ObjectMapper();
         this.objectMapper.registerModule(new JavaTimeModule());
     }
@@ -57,31 +58,6 @@ public class FicheroJsonDAOImpl implements IGenericDAO<Grupo, Integer> {
             e.printStackTrace();
             return false;
         }
-    }
-
-    @Override
-    public boolean insertar(Grupo entidad) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public Grupo obtenerPorId(Integer id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public List<Grupo> obtenerTodos() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public boolean actualizar(Grupo entidad) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public boolean eliminarPorId(Integer id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
 }
