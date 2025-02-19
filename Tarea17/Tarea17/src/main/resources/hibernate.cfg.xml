@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Dialecto de MySQL 8 -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        
+        <!-- Driver JDBC -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        
+        <!-- URL de la base de datos (nota: & se reemplaza por &amp; en XML) -->
+        <property name="hibernate.connection.url">
+            jdbc:mysql://37.187.37.143:3306/Alumnos16?serverTimeZone=UTC&amp;useSSL=false&amp;allowPublicKeyRetrieval=true
+        </property>
+        
+        <!-- Credenciales de acceso -->
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">34Maik@73do$</property>
+        
+        <!-- Estrategia de generación/actualización del esquema -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        
+        <!-- Mostrar y formatear el SQL en consola -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Registra las clases anotadas -->
+        <mapping class="com.mycompany.tarea17.model.entities.AlumnoHB"/>
+        <mapping class="com.mycompany.tarea17.model.entities.GrupoHB"/>
+
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,30 @@
+{
+  "grupos" : [ {
+    "grupo" : 135,
+    "ciclo" : "DAM",
+    "curso" : "Segundo"
+  } ],
+  "alumnos" : [ {
+    "nia" : 3,
+    "nombre" : "Mihai",
+    "apellidos" : "Stinga",
+    "genero" : "M",
+    "fechaDeNacimiento" : [ 1995, 12, 12 ],
+    "grupo" : {
+      "grupo" : 135,
+      "ciclo" : "DAM",
+      "curso" : "Segundo"
+    }
+  }, {
+    "nia" : 4,
+    "nombre" : "Claudia",
+    "apellidos" : "Castaño",
+    "genero" : "M",
+    "fechaDeNacimiento" : [ 1995, 12, 17 ],
+    "grupo" : {
+      "grupo" : 135,
+      "ciclo" : "DAM",
+      "curso" : "Segundo"
+    }
+  } ]
+}
