@@ -9,7 +9,7 @@ package com.mycompany.tarea17.model.entities;
  * @author mihai
  */
 public class GrupoFactory {
-
+    
     private final String cicloPredeterminado;
     private final String cursoPredeterminado;
 

@@ -4,8 +4,8 @@
  */
 package com.mycompany.tarea17.model.dao.utils;
 
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
 
 /**
  *
@@ -31,9 +31,4 @@ public class HibernateUtil {
         return entityManagerFactory;
     }
 
-    public static void close() {
-        if (entityManagerFactory != null && entityManagerFactory.isOpen()) {
-            entityManagerFactory.close();
-        }
-    }
 }

@@ -5,10 +5,10 @@
     <class>com.mycompany.tarea17.model.entities.AlumnoHB</class>
     <class>com.mycompany.tarea17.model.entities.GrupoHB</class>
     <properties>
-      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
-      <property name="javax.persistence.jdbc.user" value="root"/>
-      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-      <property name="javax.persistence.jdbc.password" value="34Maik@73Do$"/>
+      <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="jakarta.persistence.jdbc.user" value="root"/>
+      <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="jakarta.persistence.jdbc.password" value="34Maik@73Do$"/>
       <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
       <property name="hibernate.format_sql" value="false"/>
       <property name="hibernate.show_sql" value="false"/>

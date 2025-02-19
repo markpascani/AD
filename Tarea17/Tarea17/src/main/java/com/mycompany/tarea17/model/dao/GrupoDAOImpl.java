@@ -15,7 +15,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -139,6 +138,34 @@ public class GrupoDAOImpl implements IGrupoDAO {
             logger.error("No se ha podido actualizar el grupo" + id, e);
             return false;
         }
+    }
+
+    @Override
+    public Grupo obtenerPorCicloYCurso(String ciclo, String curso) {
+        Grupo grupo = null;
+        String sql = """
+                     SELECT Grupo, Ciclo, Curso FROM Grupo
+                     WHERE Ciclo = ? AND Curso = ?
+                     LIMIT 1
+                     """;
+        
+        try(Connection connection = MyDataSource.getConnection();
+                PreparedStatement pstm = connection.prepareStatement(sql)){
+            pstm.setString(1, ciclo);
+            pstm.setString(2, curso);
+            
+            ResultSet res = pstm.executeQuery();
+            
+            if(res.next()){
+                grupo = new Grupo(res.getInt("Grupo"), res.getString("Ciclo"), res.getString("Curso"));
+            }
+            
+        } catch (SQLException e) {
+            logger.error("No se ha buscar en la bd" + ciclo, curso, e);
+
+        }
+        
+        return grupo;
     }
 
 }

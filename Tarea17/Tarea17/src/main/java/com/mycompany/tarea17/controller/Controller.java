@@ -4,15 +4,14 @@
  */
 package com.mycompany.tarea17.controller;
 
-import com.mycompany.tarea17.model.dao.AlumnoDAOImpl;
-import com.mycompany.tarea17.model.dao.GrupoDAOImpl;
+import com.mycompany.tarea17.model.dao.utils.FicheroJson;
 import com.mycompany.tarea17.model.dao.interfaces.IAlumnoDAO;
 import com.mycompany.tarea17.model.dao.interfaces.IGrupoDAO;
 import com.mycompany.tarea17.model.entities.Alumno;
 import com.mycompany.tarea17.model.entities.Grupo;
 import com.mycompany.tarea17.model.entities.GrupoFactory;
+import com.mycompany.tarea17.model.dao.utils.FicheroBinario;
 import com.mycompany.tarea17.view.IVista;
-import com.mycompany.tarea17.view.VistaConsola;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -22,7 +21,7 @@ import java.util.List;
  */
 public class Controller {
 
-    public void ejecutar(IAlumnoDAO alumnoDAO, IGrupoDAO grupoDAO, IVista vista, FicheroJsonImpl ficheroDAO) {
+    public void ejecutar(IAlumnoDAO alumnoDAO, IGrupoDAO grupoDAO, IVista vista, FicheroJson ficheroJson, FicheroBinario ficheroBinario) {
         boolean salir = false;
 
         while (!salir) {
@@ -48,9 +47,15 @@ public class Controller {
                     case 8 ->
                         eliminarAlumnosPorCurso(alumnoDAO, grupoDAO, vista);
                     case 9 ->
-                        guardarGrupoEnJson(grupoDAO, alumnoDAO, vista, ficheroDAO);
+                        guardarGrupoEnJson(grupoDAO, alumnoDAO, vista, ficheroJson);
                     case 10 ->
                         mostrarAlumno(alumnoDAO, vista);
+                    case 11 ->
+                        guardarAlumnosDeDBAFicheroBinario(alumnoDAO, vista, ficheroBinario);
+                    case 12 ->
+                        guardarAlumnosDeFicheroBinarioADB(alumnoDAO, grupoDAO, vista, ficheroBinario);
+                    case 13 -> 
+                        eliminarAlumnosPorApellido(alumnoDAO, vista);
                     default -> {
                         if (opcion == 0) {
                             vista.mostrarMensaje("Saliendo del programa...");
@@ -310,6 +315,9 @@ public class Controller {
      */
     private void eliminarAlumnosPorCurso(IAlumnoDAO alumnoDAO, IGrupoDAO grupoDAO, IVista vista) {
         try {
+            List<Grupo> grupo = grupoDAO.obtenerTodos();
+            vista.mostrarGrupos(grupo);
+            
             String ciclo = vista.solicitarEntrada("Ingrese Ciclo del curso");
             String curso = vista.solicitarEntrada("Ingrese Curso");
             boolean exito = alumnoDAO.eliminarPorCurso(ciclo, curso);
@@ -317,7 +325,7 @@ public class Controller {
             if (exito) {
                 vista.mostrarMensaje("Alumnos del curso eliminados correctamente.");
             } else {
-                vista.mostrarMensaje("No se encontraron alumnos para el curso.");
+                vista.mostrarMensaje("No se encontraron alumnos para el curso o no existe el grupo");
             }
         } catch (Exception e) {
             vista.mostrarMensaje("Error: " + e.getMessage());
@@ -335,7 +343,7 @@ public class Controller {
      * @param vista
      * @param fichero
      */
-    private void guardarGrupoEnJson(IGrupoDAO grupoDAO, IAlumnoDAO alumnoDAO, IVista vista, FicheroJsonImpl fichero) {
+    private void guardarGrupoEnJson(IGrupoDAO grupoDAO, IAlumnoDAO alumnoDAO, IVista vista, FicheroJson fichero) {
         List<Grupo> grupos = grupoDAO.obtenerTodos();
         vista.mostrarGrupos(grupos);
 
@@ -402,5 +410,92 @@ public class Controller {
         } catch (NumberFormatException e) {
             vista.mostrarMensaje("Error: Debe ingresar un número válido.");
         }
+    }
+    
+    /**
+     * Metodo que obtiene mediante alumnoDAO la lista de todos los alumnos en la base de datos SQL
+     * y en caso de no ser nula la lista, guarda los alumnos con la clase Fichero Binario en un .dat, mostrando
+     * en la vista si se ha guardado correctamente, si no lo ha hecho o si no hay alumnos que guardar.
+     * @param alumnoDAO
+     * @param vista
+     * @param ficheroBinario 
+     */
+    private void guardarAlumnosDeDBAFicheroBinario(IAlumnoDAO alumnoDAO, IVista vista, FicheroBinario ficheroBinario) {
+        List<Alumno> alumnos = alumnoDAO.obtenerTodos();
+        boolean guardado;
+        if (alumnos != null) {
+            guardado = ficheroBinario.guardarAlumnosEnFicheroBinario(alumnos);
+
+            if (guardado) {
+                vista.mostrarMensaje("Alumnos guardado correctamente en fichero binario.");
+            } else {
+                vista.mostrarMensaje("Error al guardar los alumnos en el fichero binario.");
+            }
+        } else {
+            vista.mostrarMensaje("No hay alumnos que guardar en la db.");
+        }
+    }
+    
+    
+    /**
+     * Metodo que lee primero la lista de alumnos de un fichero binario con un metodo de la clase FicheroBinario,
+     * comprueba que la lista no sea nula, y utiliza una lambda para comprobar cada alumno antes de guardarlo en 
+     * la base de datos con alumnoDAO. La comprobación que ahcer es primero si el alumno tiene asignado un grupo,
+     * en caso de no tenerlo, procede a guardar el alumno sin un grupo asignado (null). En caso de tener un grupo, 
+     * comprueba (con grupoDAO) primero si existe por Curso y Ciclo, y en caso de existir, lo recupera de la base de datos
+     * con el id de grupo correspondiente, y lo actualiza en el objeto alumno antes de guardarlo en la base 
+     * de datos con el alumnoDAO.
+     * 
+     * @param alumnoDAO
+     * @param grupoDAO
+     * @param vista
+     * @param ficheroBinario 
+     */
+    private void guardarAlumnosDeFicheroBinarioADB(IAlumnoDAO alumnoDAO, IGrupoDAO grupoDAO, IVista vista, FicheroBinario ficheroBinario) {
+        List<Alumno> alumnos = ficheroBinario.leerAlumnosDeFicheroBinario();
+
+        if (alumnos != null) {
+            alumnos.forEach(alumno -> {
+                alumno.setNia(0);
+                Grupo grupo = null;
+                if (alumno.getGrupo() == null) {
+                    vista.mostrarMensaje("El alumno no esta matriculado en ningun grupo.");
+                } else {
+                    if (grupoDAO.obtenerPorCicloYCurso(alumno.getGrupo().getCiclo(), alumno.getGrupo().getCurso()) == null) {
+                        grupo = alumno.getGrupo();
+                        grupo.setGrupo(0);
+                        grupoDAO.insertar(alumno.getGrupo());
+                        grupo = grupoDAO.obtenerPorCicloYCurso(alumno.getGrupo().getCiclo(), alumno.getGrupo().getCurso());
+                        vista.mostrarMensaje("No existe el grupo del alumno que se va a guardar. Creado nuevo grupo ->" + grupo);
+                    } else {
+                        grupo = grupoDAO.obtenerPorCicloYCurso(alumno.getGrupo().getCiclo(), alumno.getGrupo().getCurso());
+                    }
+                    alumno.setGrupo(grupo);
+                }
+
+                if (alumnoDAO.insertar(alumno)) {
+                    vista.mostrarMensaje("Insertado alumno ->" + alumno.toString());
+                } else {
+                    vista.mostrarMensaje("No se ha podido insertar alumno, parando operacion ->" + alumno.toString());
+                    throw new RuntimeException();
+                }
+            });
+        } else {
+            vista.mostrarMensaje("No hay alumnos a insertar.");
+        }
+        vista.mostrarMensaje("Terminado de insertar todos los alumnos.");
+    }
+    
+    /**
+     * Metodo que pedira una palabra al usuario para buscar posteriormente
+     * alumnos cuyo apellido la contengan y los elimine. 
+     * En caso de que la operacion no falle , devuelve true.
+     * @param alumnoDAO
+     * @param vista 
+     */
+    private void eliminarAlumnosPorApellido(IAlumnoDAO alumnoDAO, IVista vista) {
+        String palabra = vista.solicitarEntrada("Escribe una palabra para eliminar los alumnos cuyo apellido la contengan");
+        if(alumnoDAO.eliminarAlumnosCuyoApellidoContengaUnaPalabra(palabra)) vista.mostrarMensaje("Operacion realizada con exito.");
+        else vista.mostrarMensaje("No se ha podido realizar la operacion.");
     }
 }

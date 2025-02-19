@@ -22,4 +22,6 @@ public interface IGrupoDAO {
     boolean actualizar(Grupo grupo);
 
     boolean eliminarPorId(int id);
+    
+    Grupo obtenerPorCicloYCurso(String ciclo, String curso);
 }

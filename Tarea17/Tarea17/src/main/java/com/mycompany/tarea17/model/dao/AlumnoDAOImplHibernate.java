@@ -10,12 +10,12 @@ import com.mycompany.tarea17.model.entities.Alumno;
 import com.mycompany.tarea17.model.entities.AlumnoHB;
 import com.mycompany.tarea17.model.entities.Grupo;
 import com.mycompany.tarea17.model.entities.GrupoHB;
-import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.EntityTransaction;
+import java.util.ArrayList;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -180,7 +180,8 @@ public class AlumnoDAOImplHibernate implements IAlumnoDAO {
 
         return alumno;
     }
-
+    
+    
     @Override
     public boolean eliminarPorCurso(String ciclo, String curso) {
         EntityManager em = emf.createEntityManager();
@@ -189,8 +190,8 @@ public class AlumnoDAOImplHibernate implements IAlumnoDAO {
             em.getTransaction().begin();
             
             int affectedRows = em.createQuery("""
-                                              UPDATE Alumno a SET a.Grupo = NULL
-                                              WHERE a.Grupo IN (SELECT g FROM Grupo g WHERE g.Ciclo = :ciclo AND g.Curso = :curso)"
+                                              UPDATE Alumno a SET a.grupo = NULL 
+                                              WHERE a.grupo IN (SELECT g FROM Grupo g WHERE g.ciclo = :ciclo AND g.curso = :curso)
                                               """)
                     .setParameter("ciclo", ciclo)
                     .setParameter("curso", curso)
@@ -209,5 +210,32 @@ public class AlumnoDAOImplHibernate implements IAlumnoDAO {
             em.close();
         }
     }
+
+    @Override
+    public boolean eliminarAlumnosCuyoApellidoContengaUnaPalabra(String palabra) {
+        EntityManager em = emf.createEntityManager();
+        EntityTransaction et = em.getTransaction();
+        try{
+            et.begin();
+            int rowsAffected = em.createQuery("""
+                                              DELETE FROM Alumno a WHERE a.Apellidos LIKE "%:palabra%"
+                                              """)
+                    .setParameter("palabra", palabra)
+                    .executeUpdate();
+            et.commit();
+            return true;
+        }catch(Exception e){
+            logger.error("No se ha podido realizar la operación ->"+e);
+            if(et.isActive()){
+                et.rollback();
+            }
+            return false;
+        }finally{
+            em.close();
+        }
+    }
+    
+    
+    
 
 }

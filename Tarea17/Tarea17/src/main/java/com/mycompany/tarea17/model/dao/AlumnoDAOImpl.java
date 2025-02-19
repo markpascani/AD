@@ -16,7 +16,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -27,7 +26,6 @@ import org.apache.logging.log4j.Logger;
 public class AlumnoDAOImpl implements IAlumnoDAO {
 
     private static final Logger logger = LogManager.getLogger(AlumnoDAOImpl.class);
-
 
     @Override
     public boolean insertar(Alumno entidad) {
@@ -120,10 +118,13 @@ public class AlumnoDAOImpl implements IAlumnoDAO {
                 alumno.setApellidos(rs.getString("Apellidos"));
                 alumno.setGenero(rs.getString("Genero").charAt(0));
                 alumno.setFechaDeNacimiento(rs.getDate("FechaDeNacimiento").toLocalDate());
-                grupo.setGrupo(rs.getInt("Grupo"));
-                grupo.setCiclo(rs.getString("Ciclo"));
-                grupo.setCurso(rs.getString("Curso"));
-                alumno.setGrupo(grupo);
+                int idGrupo = rs.getInt("Grupo");
+                if (idGrupo > 0) {
+                    grupo.setGrupo(idGrupo);
+                    grupo.setCiclo(rs.getString("Ciclo"));
+                    grupo.setCurso(rs.getString("Curso"));
+                    alumno.setGrupo(grupo);
+                }
 
                 alumnos.add(alumno);
             }
@@ -186,19 +187,35 @@ public class AlumnoDAOImpl implements IAlumnoDAO {
                      WHERE a.Grupo IN (SELECT g.Grupo FROM Grupo g 
                      WHERE g.Ciclo = ? AND g.Curso = ?)
                      """;
-        
-        try(Connection connection = MyDataSource.getConnection();
-                PreparedStatement pstm = connection.prepareStatement(sql)){
+
+        try (Connection connection = MyDataSource.getConnection(); PreparedStatement pstm = connection.prepareStatement(sql)) {
 
             pstm.setString(1, ciclo);
             pstm.setString(2, curso);
-            
+
             return pstm.executeUpdate() > 0;
-        }catch(SQLException e){
-            logger.error("No se ha podido realizar la operacion"+ciclo, curso, e);
+        } catch (SQLException e) {
+            logger.error("No se ha podido realizar la operacion" + ciclo, curso, e);
             return false;
         }
+
+    }
+
+    @Override
+    public boolean eliminarAlumnosCuyoApellidoContengaUnaPalabra(String palabra) {
+        String sql = """
+                     DELETE FROM Alumno WHERE Apellidos like "%?%"
+                     """;
         
+        try(Connection connection = MyDataSource.getConnection();
+                PreparedStatement pstm = connection.prepareStatement(sql)){
+            
+            pstm.setString(1, palabra);            
+            return pstm.executeUpdate() >= 0;
+        }catch(SQLException e){
+            logger.error("No se ha podido realizar la operación -> "+palabra, e);
+            return false;
+        }
     }
 
 }

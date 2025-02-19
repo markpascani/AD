@@ -4,10 +4,12 @@
  */
 package com.mycompany.tarea17.controller;
 
+import com.mycompany.tarea17.model.dao.utils.FicheroJson;
 import com.mycompany.tarea17.model.dao.AlumnoDAOImplHibernate;
 import com.mycompany.tarea17.model.dao.GrupoDAOImplHibernate;
 import com.mycompany.tarea17.model.dao.interfaces.IAlumnoDAO;
 import com.mycompany.tarea17.model.dao.interfaces.IGrupoDAO;
+import com.mycompany.tarea17.model.dao.utils.FicheroBinario;
 import com.mycompany.tarea17.model.dao.utils.HibernateUtil;
 import com.mycompany.tarea17.view.IVista;
 import com.mycompany.tarea17.view.VistaConsola;
@@ -23,14 +25,13 @@ public class Ejecutador2 {
         IAlumnoDAO alumnoDAO = new AlumnoDAOImplHibernate();
         IGrupoDAO grupoDAO = new GrupoDAOImplHibernate();
         IVista vista = new VistaConsola();
-        FicheroJsonImpl ficheroDAO = new FicheroJsonImpl();
+        FicheroJson ficheroDAO = new FicheroJson();
+        FicheroBinario ficheroBinario = new FicheroBinario();
 
         Controller ctrl = new Controller();
         try {
-            ctrl.ejecutar(alumnoDAO, grupoDAO, vista, ficheroDAO);
+            ctrl.ejecutar(alumnoDAO, grupoDAO, vista, ficheroDAO, ficheroBinario);
         } finally {
-            // Asegura que se cierra Hibernate al terminar
-            HibernateUtil.close();
             System.out.println("Hibernate cerrado correctamente.");
         }
 

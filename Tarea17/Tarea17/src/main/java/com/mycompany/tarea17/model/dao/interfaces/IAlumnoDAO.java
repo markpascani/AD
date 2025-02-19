@@ -55,4 +55,12 @@ public interface IAlumnoDAO {
      * @return True si la operacion se ha realizado con exito.
      */
     boolean eliminarPorCurso(String ciclo, String curso);
+    
+    
+    /**
+     * Elimina un alumno o alumnos cuyo apellido contenga una palabra
+     * @param palabra
+     * @return True si la operacion ha sido exitosa. 
+     */
+    boolean eliminarAlumnosCuyoApellidoContengaUnaPalabra(String palabra);
 }

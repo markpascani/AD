@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.tarea17.controller;
+package com.mycompany.tarea17.model.dao.utils;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -19,12 +19,12 @@ import java.util.List;
  *
  * @author mihai
  */
-public class FicheroJsonImpl {
+public class FicheroJson {
 
     private static final String FILE_PATH = "grupos.json";
     private final ObjectMapper objectMapper;
 
-    public FicheroJsonImpl() {
+    public FicheroJson() {
         this.objectMapper = new ObjectMapper();
         this.objectMapper.registerModule(new JavaTimeModule());
     }

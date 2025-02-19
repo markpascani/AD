@@ -4,13 +4,16 @@
  */
 package com.mycompany.tarea17.model.entities;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
  *
  * @author mihai
  */
-public class Grupo {
+public class Grupo implements Serializable {
+
+    private static final long serialVersionUID = 1L;
     private int grupo;
     private String ciclo;
     private String curso;
@@ -32,12 +35,10 @@ public class Grupo {
     public void setGrupo(int grupo) {
         this.grupo = grupo;
     }
-    
-    
+
     public int getGrupo() {
         return grupo;
     }
-
 
     public String getCiclo() {
         return ciclo;
@@ -89,8 +90,5 @@ public class Grupo {
     public String toString() {
         return "Grupo{" + "grupo=" + grupo + ", ciclo=" + ciclo + ", curso=" + curso + '}';
     }
-    
-    
-    
-    
+
 }

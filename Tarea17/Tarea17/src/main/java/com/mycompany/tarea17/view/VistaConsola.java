@@ -30,7 +30,8 @@ public class VistaConsola implements IVista{
                            8. Eliminar alumno por curso.
                            9. Guardar un grupo con sus alumnos en un fichero Json.
                            10. Mostrar alumno de una lista.
-                           
+                           11. Guardar alumnos de db en un fichero binario.
+                           12. Leer alumnos de fichero binario y guardarlos en db.
                            -> 0. Salir.
                            """);
     }
@@ -86,7 +87,7 @@ public class VistaConsola implements IVista{
     public String solicitarEntrada(String mensaje
     ) {
         System.out.print(mensaje + ": ");
-        return scanner.nextLine();
+        return scanner.nextLine().trim();
     }
 
     @Override

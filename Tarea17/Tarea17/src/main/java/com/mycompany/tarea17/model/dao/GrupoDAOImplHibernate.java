@@ -6,15 +6,13 @@ package com.mycompany.tarea17.model.dao;
 
 import com.mycompany.tarea17.model.dao.interfaces.IGrupoDAO;
 import com.mycompany.tarea17.model.dao.utils.HibernateUtil;
-import com.mycompany.tarea17.model.entities.Alumno;
-import com.mycompany.tarea17.model.entities.AlumnoHB;
 import com.mycompany.tarea17.model.entities.Grupo;
 import com.mycompany.tarea17.model.entities.GrupoHB;
 import java.util.List;
 import java.util.stream.Collectors;
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.EntityTransaction;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -134,7 +132,7 @@ public class GrupoDAOImplHibernate implements IGrupoDAO {
 
         GrupoHB grupoHB = null;
 
-        if (grupo.getGrupo() > 0) {
+        if (grupo.getGrupo() >= 0) {
             grupoHB = new GrupoHB(grupo.getGrupo(),
                     grupo.getCiclo(),
                     grupo.getCurso());
@@ -153,6 +151,25 @@ public class GrupoDAOImplHibernate implements IGrupoDAO {
             grupo = new Grupo(grupoHB.getGrupo(),
                     grupoHB.getCiclo(),
                     grupoHB.getCurso());
+        }
+        return grupo;
+    }
+
+    @Override
+    public Grupo obtenerPorCicloYCurso(String ciclo, String curso) {
+        EntityManager em = emf.createEntityManager();
+        GrupoHB grupoHB = null;
+        Grupo grupo = null;
+        try{
+            grupoHB = (GrupoHB) em.createQuery("SELECT g FROM Grupo g WHERE g.ciclo = :ciclo AND g.curso = :curso")
+                    .setParameter("ciclo", ciclo)
+                    .setParameter("curso", curso)
+                    .getSingleResult();
+            grupo = convertirAGrupo(grupoHB);
+        }catch(Exception e){
+            logger.error("No se ha podido buscar el grupo"+e);
+        }finally{
+            em.close();
         }
         return grupo;
     }
