@@ -1,0 +1,334 @@
+[2025-02-22 10:22:34] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han leído 0 alumnos desde el fichero alumnos.bin
+[2025-02-22 10:32:16] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han leído 0 alumnos desde el fichero alumnos.bin
+[2025-02-22 10:32:22] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han guardado 15 alumnos en el fichero alumnos.bin
+[2025-02-22 10:33:09] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han leído 15 alumnos desde el fichero alumnos.bin
+[2025-02-22 10:33:25] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han leído 15 alumnos desde el fichero alumnos.bin
+[2025-02-22 10:34:44] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han leído 15 alumnos desde el fichero alumnos.bin
+[2025-02-22 10:51:53] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han leído 15 alumnos desde el fichero alumnos.bin
+[2025-02-22 10:52:40] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han leído 15 alumnos desde el fichero alumnos.bin
+[2025-02-22 10:54:13] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han leído 15 alumnos desde el fichero alumnos.bin
+[2025-02-22 10:54:28] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroJson - Se han guardado 3 grupos en el fichero JSON grupos.json
+[2025-02-22 10:55:09] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroJson - Se han guardado 1 grupos en el fichero JSON grupos.json
+[2025-02-22 11:10:53] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-22 11:10:53] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-22 11:10:53] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-22 11:10:53] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-22 11:10:54] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-22 11:11:25] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-22 11:11:25] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-22 11:11:25] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-22 11:11:25] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-22 11:11:26] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-22 11:12:34] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-22 11:12:34] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-22 11:12:34] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-22 11:12:34] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-22 11:12:35] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 08:51:24] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-23 08:51:24] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-23 08:51:24] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-23 08:51:24] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-23 08:51:25] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 09:14:50] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-23 09:14:50] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-23 09:14:50] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-23 09:14:50] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-23 09:14:51] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 09:14:52] [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-02-23 09:37:51] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-23 09:37:51] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-23 09:37:51] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-23 09:37:51] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-23 09:37:52] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 09:38:53] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-23 09:38:53] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-23 09:38:53] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-23 09:38:53] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-23 09:38:54] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 09:38:55] [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-02-23 09:39:07] [main] ERROR com.mycompany.tarea17_mihai.controlador.Controlador - Error al crear el nuevo alumno -> java.lang.IllegalArgumentException: Unable to locate entity descriptor: com.mycompany.tarea17_mihai.models.entidades.Grupo
+[2025-02-23 10:25:13] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-23 10:25:13] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-23 10:25:13] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-23 10:25:14] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-23 10:25:14] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 10:25:15] [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-02-23 10:25:34] [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1054, SQLState: 42S22
+[2025-02-23 10:25:34] [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unknown column 'ah1_0.GrupoHB' in 'field list'
+[2025-02-23 10:25:34] [main] ERROR com.mycompany.tarea17_mihai.controlador.Controlador - Error al crear el nuevo alumno -> org.hibernate.exception.SQLGrammarException: JDBC exception executing SQL [select ah1_0.GrupoHB,ah1_0.NIA,ah1_0.Apellidos,ah1_0.FechaDeNacimiento,ah1_0.Genero,ah1_0.Nombre from Alumno ah1_0 where ah1_0.GrupoHB=?] [Unknown column 'ah1_0.GrupoHB' in 'field list'] [n/a]
+[2025-02-23 10:26:27] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-23 10:26:27] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-23 10:26:27] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-23 10:26:27] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-23 10:26:28] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 10:26:28] [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-02-23 10:26:41] [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1054, SQLState: 42S22
+[2025-02-23 10:26:41] [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unknown column 'ah1_0.GrupoHB' in 'field list'
+[2025-02-23 10:26:41] [main] ERROR com.mycompany.tarea17_mihai.controlador.Controlador - Error al crear el nuevo alumno -> org.hibernate.exception.SQLGrammarException: JDBC exception executing SQL [select ah1_0.GrupoHB,ah1_0.NIA,ah1_0.Apellidos,ah1_0.FechaDeNacimiento,ah1_0.Genero,ah1_0.Nombre from Alumno ah1_0 where ah1_0.GrupoHB=?] [Unknown column 'ah1_0.GrupoHB' in 'field list'] [n/a]
+[2025-02-23 10:28:42] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-23 10:28:42] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-23 10:28:42] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-23 10:28:42] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-23 10:28:43] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 10:28:44] [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-02-23 10:43:15] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-23 10:43:15] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-23 10:43:15] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-23 10:43:15] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-23 10:43:16] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 10:43:17] [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-02-23 10:46:13] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-23 10:46:13] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-23 10:46:14] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-23 10:46:14] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-23 10:46:14] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 10:46:15] [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-02-23 10:48:08] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-23 10:48:08] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-23 10:48:08] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-23 10:48:09] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-23 10:48:09] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 10:48:10] [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-02-23 10:48:18] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han guardado 16 alumnos en el fichero alumnos.bin
+[2025-02-23 10:48:32] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han guardado 16 alumnos en el fichero alumnos.bin
+[2025-02-23 10:48:37] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han leído 16 alumnos desde el fichero alumnos.bin
+[2025-02-23 10:50:25] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-23 10:50:25] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-23 10:50:25] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-23 10:50:25] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-23 10:50:26] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 10:50:27] [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-02-23 10:50:43] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han leído 16 alumnos desde el fichero alumnos.bin
+[2025-02-23 10:53:36] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-23 10:53:36] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-23 10:53:36] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-23 10:53:37] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-23 10:53:37] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 10:53:38] [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-02-23 10:53:41] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han leído 16 alumnos desde el fichero alumnos.bin
+[2025-02-23 10:58:45] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-23 10:58:45] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-23 10:58:45] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-23 10:58:45] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-23 10:58:46] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 10:58:46] [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-02-23 10:58:49] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han leído 16 alumnos desde el fichero alumnos.bin
+[2025-02-23 11:06:18] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-23 11:06:18] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-23 11:06:18] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-23 11:06:19] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-23 11:06:19] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 11:06:20] [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-02-23 11:06:25] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han leído 16 alumnos desde el fichero alumnos.bin
+[2025-02-23 11:06:26] [main] ERROR com.mycompany.tarea17_mihai.controlador.Controlador - Error en el formato de la opcion elegida del menu -> java.lang.NumberFormatException: For input string: ""
+[2025-02-23 11:08:29] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han leído 16 alumnos desde el fichero alumnos.bin
+[2025-02-23 11:08:30] [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1452, SQLState: 23000
+[2025-02-23 11:08:30] [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Cannot add or update a child row: a foreign key constraint fails (`Alumnos16`.`Alumno`, CONSTRAINT `fk_alumno_grupo` FOREIGN KEY (`Grupo`) REFERENCES `Grupo` (`Grupo`) ON DELETE SET NULL)
+[2025-02-23 11:11:02] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-23 11:11:02] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-23 11:11:02] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-23 11:11:02] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-23 11:11:03] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 11:11:03] [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-02-23 11:11:10] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han leído 16 alumnos desde el fichero alumnos.bin
+[2025-02-23 11:11:11] [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1452, SQLState: 23000
+[2025-02-23 11:11:11] [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Cannot add or update a child row: a foreign key constraint fails (`Alumnos16`.`Alumno`, CONSTRAINT `fk_alumno_grupo` FOREIGN KEY (`Grupo`) REFERENCES `Grupo` (`Grupo`) ON DELETE SET NULL)
+[2025-02-23 11:15:18] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-23 11:15:18] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-23 11:15:18] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-23 11:15:18] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-23 11:15:19] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 11:15:19] [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-02-23 11:15:27] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han leído 16 alumnos desde el fichero alumnos.bin
+[2025-02-23 11:32:48] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-23 11:32:48] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-23 11:32:48] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-23 11:32:48] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-23 11:32:49] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 11:32:50] [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-02-23 11:33:06] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han leído 16 alumnos desde el fichero alumnos.bin
+[2025-02-23 11:34:08] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-23 11:34:08] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-23 11:34:08] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-23 11:34:08] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-23 11:34:09] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 11:34:10] [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-02-23 11:35:25] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-23 11:35:25] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-23 11:35:25] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-23 11:35:26] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-23 11:35:26] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 11:35:27] [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-02-23 11:35:48] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroBinario - Se han leído 16 alumnos desde el fichero alumnos.bin
+[2025-02-23 11:36:06] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroJson - Se han guardado 5 grupos en el fichero JSON grupos.json
+[2025-02-23 11:36:20] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroJson - Se han leído 5 grupos desde el fichero JSON grupos.json
+[2025-02-23 11:36:58] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroJson - Se han leído 5 grupos desde el fichero JSON grupos.json
+[2025-02-23 11:39:03] [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: HibernateAlumnos]
+[2025-02-23 11:39:03] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.6.Final
+[2025-02-23 11:39:03] [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[2025-02-23 11:39:03] [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[2025-02-23 11:39:04] [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://37.187.37.143:3306/Alumnos16?zeroDateTimeBehavior=CONVERT_TO_NULL]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 9.1
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+[2025-02-23 11:39:04] [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2025-02-23 11:39:07] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroJson - Se han leído 5 grupos desde el fichero JSON grupos.json
+[2025-02-23 11:40:22] [main] INFO  com.mycompany.tarea17_mihai.models.utils.FicheroJson - Se han guardado 1 grupos en el fichero JSON grupos.json

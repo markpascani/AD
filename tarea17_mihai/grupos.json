@@ -1,0 +1,36 @@
+[ {
+  "ID" : 1,
+  "Ciclo" : "ASIR",
+  "Curso" : "SEGUNDO",
+  "Alumnos" : [ {
+    "NIA" : 20,
+    "Nombre" : "Miguel",
+    "Apellidos" : "Ramos",
+    "Genero" : "M",
+    "FechaDeNacimiento" : "2003-07-08"
+  }, {
+    "NIA" : 49,
+    "Nombre" : "Carlos",
+    "Apellidos" : "Fernandez",
+    "Genero" : "M",
+    "FechaDeNacimiento" : "2003-05-10"
+  }, {
+    "NIA" : 50,
+    "Nombre" : "Maria",
+    "Apellidos" : "Lopez",
+    "Genero" : "F",
+    "FechaDeNacimiento" : "2002-11-20"
+  }, {
+    "NIA" : 51,
+    "Nombre" : "Pablo",
+    "Apellidos" : "Gonzalez",
+    "Genero" : "M",
+    "FechaDeNacimiento" : "2001-09-15"
+  }, {
+    "NIA" : 52,
+    "Nombre" : "Ana",
+    "Apellidos" : "Martinez",
+    "Genero" : "F",
+    "FechaDeNacimiento" : "2004-02-12"
+  } ]
+} ]
